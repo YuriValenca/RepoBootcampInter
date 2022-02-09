@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url(../resources/Bebas/bebasneue-regular-webfont.woff) format("woff");
+
+}
+
+@font-face {
+    font-family: 'netflix-sans';
+    src: url(../resources/NetflixSans/netflix_sans_medium-webfont.woff) format("woff");
+}
+
+body {
+    background-color: var(--preto);
+    font-family: netflix-sans, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/* Cabeçalho */
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+header .logo {
+    font-family: bebas, 'Times New Roman', Times, serif;
+    color: var(--vermelho);
+    margin-left: 5px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #B3B3B3;
+}
+
+.start {
+    font-weight: 600;
+}
+
+/* Filme principal */
+
+
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url(../img/houseofcards.jpg);
+    height: 800px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    font-size: 40px;
+}
+
+.botao {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: var(--preto);
+    padding: 15px 30px;
+    margin-right: 30px;
+    font-size: 15px;
+    font-family: netflix-sans;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.fa-solid {
+    font-weight: 100;
+}
