@@ -59,19 +59,25 @@ header nav a:hover {
 
 /* Filme principal */
 
-
+.container {
+    margin: 0 30px;
+}
 
 .filme-principal {
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url(../img/houseofcards.jpg);
-    height: 800px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url(../img/capa-house.jpg);
+    height: 600px;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin: 0 20px;
 }
 
+.filme-principal .container {
+    width: 80%;
+}
 
 .filme-principal .descricao {
     margin-top: 10px;
@@ -82,11 +88,12 @@ header nav a:hover {
     font-size: 40px;
 }
 
+
 .botao {
     background-color: rgba(255, 255, 255, 0.5);
     border: none;
     color: var(--preto);
-    padding: 15px 30px;
+    padding: 15px;
     margin-right: 30px;
     font-size: 15px;
     font-family: netflix-sans;
@@ -102,6 +109,14 @@ header nav a:hover {
     margin-right: 5px;
 }
 
-.fa-solid {
-    font-weight: 100;
+/* Carrossel */
+
+.box-filmes {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes {
+    margin: 0 20px;
 }
