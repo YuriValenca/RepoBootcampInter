@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.css">
     <title>Netflix</title>
 </head>
 <body>
@@ -16,7 +23,7 @@
                 <a class="start" href="">Início</a>
                 <a href="">Séries</a>
                 <a href="">Filmes</a>
-                <a href="">Bombando</a>
+                <a href="">Em alta</a>
                 <a href="">Minha lista</a>
             </nav>
         </div>
@@ -29,17 +36,22 @@
                     House of Cards
                 </h3>
                 <p class="descricao">
-                    Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House Of Cards!
+                    Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House Of Cards que está imperdível!
                 </p>
                 <div class="botoes">
-                    <button role="button" class="botao">
-                        <i class="fa-solid fa-play"></i>
-                        Assistir agora
-                    </button>
-                    <button role="button" class="botao">
-                        <i class="fa-solid fa-circle-info"></i>
-                        Episódios e Informações
-                    </button>
+                    <a href="https://www.netflix.com/watch/70248289?trackId=14277281&tctx=-97%2C-97%2C%2C%2C%2C%2C%2C" target="blank">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                            Assistir agora
+                        </button>
+                    </a>
+                    
+                    <a href="https://www.netflix.com/title/70178217" target="_blank" rel="noopener noreferrer">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-circle-info"></i>
+                            Episódios e Informações
+                        </button>
+                    </a>
                     <button role="button" class="botao">
                         <i class="fa-solid fa-plus"></i>
                         Adicionar à minha lista
@@ -50,7 +62,45 @@
         </div>
     </main>
 
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filmes" src="img/mini1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini6.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini8.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini9.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
     <script src="https://kit.fontawesome.com/3f1d752ec0.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/main.js"></script>
 
 </body>
 </html>
